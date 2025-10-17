@@ -6,3 +6,5 @@ def power(base,p):
     return math.pow(base,p)
 def ca(radius):
     return math.pi*math.pow(radius,2) 
+
+print("hello world")
