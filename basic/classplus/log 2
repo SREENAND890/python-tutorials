@@ -1,0 +1,17 @@
+def largest_gap(nums):
+    if len(nums) < 2:
+        return 0 
+
+    nums.sort()
+
+    gaps = [nums[i+1] - nums[i] for i in range(len(nums) - 1)]
+
+
+    return max(gaps)
+
+
+nums1 = [3, 10, 6, 1, 15]
+print(largest_gap(nums1))  
+
+nums2 = [2, 5, 9, 1]
+print(largest_gap(nums2))  
